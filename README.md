@@ -2,7 +2,7 @@
 
 > A Grunt-init template for creating Joomla! 3.0 CMS components.
 
-[node.js] http://nodejs.org/
+[node.js]: http://nodejs.org/
 [grunt-init]: http://gruntjs.com/project-scaffolding
 [grunt]: http://gruntjs.com
 
