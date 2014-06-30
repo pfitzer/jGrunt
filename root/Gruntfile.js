@@ -23,7 +23,17 @@ var questions = [
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        
+	availabletasks: {
+	    tasks: {
+	        options: {
+		    filter: 'exclude',
+		    tasks: ['availabletasks'],
+		    descriptions: {
+		        'default': 'list all avaiable tasks'
+	 	    }
+		}
+	    }
+	},        
         jshint: {
             all: [
                 'Gruntfile.js',
@@ -108,6 +118,7 @@ module.exports = function(grunt) {
     // Actually load this plugin's task(s).
     grunt.loadTasks('tasks');
     
+    grunt.loadNpmTasks('grunt-available-tasks');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-exec');
