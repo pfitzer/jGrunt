@@ -23,17 +23,22 @@ var questions = [
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+
         availabletasks: {
             tasks: {
                 options: {
-                filter: 'exclude',
-                tasks: ['availabletasks'],
-                descriptions: {
-                    'default': 'list all avaiable tasks'
+                    filter: 'exclude',
+
+                    tasks: ['availabletasks'],
+
+                    descriptions: {
+                        'default': 'list all avaiable tasks',
+                        'addview': 'creates new model, view, controller'
+                    }
                 }
             }
-            }
         },
+
         jshint: {
             all: [
                 'Gruntfile.js',
@@ -123,11 +128,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-exec');
     
-    grunt.registerTask('default', ['avaiabletasks']);
+    grunt.registerTask('default', ['availabletasks']);
     grunt.registerTask('build', ['jshint', 'exec:test', 'compress']);
     grunt.registerTask('test', ['jshint', 'exec:test']);
     
-    grunt.registerTask('joomla', function (option) {
+    grunt.registerTask('addview', function (option) {
         var done = this.async(), 
             mytask = 'jGrunt';
         
