@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="component" version="2.5" method="upgrade">
+<extension type="component" version="3.0" method="upgrade">
 	<name>{%= name %}</name>
 	<creationDate>{%= grunt.template.today('yyyy-mm-dd') %}</creationDate>
 	<author>{%= author_name %}</author>
@@ -39,6 +39,11 @@
 		<filename>{%= name.toLowerCase() %}.php</filename>
 		<folder>views</folder>
 	</files>
+	<media older="media" destination="com_{%= name.toLowerCase() %}">
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>img</folder>
+	</media>
 	<languages folder="site">
 		<language tag="en-GB">language/en-GB/en-GB.com_{%= name.toLowerCase() %}.ini</language>
 		<language tag="en-US">language/en-US/en-US.com_{%= name.toLowerCase() %}.ini</language>
