@@ -78,7 +78,7 @@ module.exports = function(grunt) {
         },
         
         
-        joomlajs: {
+        jGrunt: {
             view: {
                 files: [
                     {tmpl: 'tmpl/com/model.tmpl', dest: 'component/site/models/<%= view %>.php'},
@@ -118,13 +118,13 @@ module.exports = function(grunt) {
     
     grunt.registerTask('joomla', function (option) {
         var done = this.async(), 
-            mytask = 'joomlajs';
+            mytask = 'jGrunt';
         
         if (option) {
             mytask = mytask + ':'  + option;
         }
         else {
-            mytask = 'joomlajs:view';
+            mytask = 'jGrunt:view';
         }
         
         prompt(questions, function (answers) {

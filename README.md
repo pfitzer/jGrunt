@@ -1,4 +1,4 @@
-# JoomlaJS
+# jGrunt
 
 > A Grunt-init template for creating Joomla! CMS components.
 
@@ -13,7 +13,7 @@ directory. It's recommended that you use git to clone this template into that
 directory, as follows:
 
 ```
-git clone https://github.com/qawemlilo/joomlajs.git ~/.grunt-init/joomlajs
+git clone https://github.com/pfitzer/jGrunt.git ~/.grunt-init/jGrunt
 ```
 
 _(Windows users, see [the documentation][grunt-init] for the correct
@@ -25,7 +25,7 @@ At the command-line, cd into an empty directory, run this command and follow
 the prompts.
 
 ```
-grunt-init joomlajs
+grunt-init jGrunt
 ```
 
 Then install all dependencies.

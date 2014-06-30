@@ -1,6 +1,6 @@
 /*
- * grunt-init-joomlajs
- * https://github.com/qawemlilo/joomlajs
+ * grunt-init-jGrunt
+ * https://github.com/pfitzer/jGrunt
  *
  * Copyright (c) 2013 Qawelesizwe
  * Licensed under the MIT license.
@@ -13,7 +13,7 @@ exports.description = 'Create a Joomla! component.';
 
 // Template-specific notes to be displayed before question prompts.
 exports.notes = 'For more information about how to use this template, ' +
-  'please visit https://github.com/qawemlilo/joomlajs';
+  'please visit https://github.com/pfitzer/jGrunt';
 
 // Template-specific notes to be displayed after question prompts.
 exports.after = 'You should now install project dependencies with _npm ' +

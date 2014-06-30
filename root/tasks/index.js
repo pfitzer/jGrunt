@@ -2,7 +2,7 @@
 "use strict";
 
 module.exports = function( grunt ) {
-    grunt.registerMultiTask('joomlajs', 'Compiles Joomla! extension templates', function() {
+    grunt.registerMultiTask('jGrunt', 'Compiles Joomla! extension templates', function() {
             
         // Iterate over all specified file groups.
         this.files.forEach(function(file) {

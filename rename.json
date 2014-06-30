@@ -1,11 +1,11 @@
 {
-  "component/admin/joomlajs.php": "component/admin/{%= name.toLowerCase() %}.php",
-  "component/joomlajs.xml": "component/{%= name.toLowerCase() %}.xml",
-  "component/site/joomlajs.php": "component/site/{%= name.toLowerCase() %}.php",
-  "component/site/language/en-GB/en-GB.com_joomlajs.ini": "component/site/language/en-GB/en-GB.com_{%= name.toLowerCase() %}.ini",
-  "component/site/language/en-US/en-US.com_joomlajs.ini": "component/site/language/en-US/en-US.com_{%= name.toLowerCase() %}.ini",
-  "component/admin/language/en-GB/en-GB.com_joomlajs.ini": "component/admin/language/en-GB/en-GB.com_{%= name.toLowerCase() %}.ini",
-  "component/admin/language/en-GB/en-GB.com_joomlajs.sys.ini": "component/admin/language/en-GB/en-GB.com_{%= name.toLowerCase() %}.sys.ini",
-  "component/admin/language/en-US/en-US.com_joomlajs.ini": "component/admin/language/en-US/en-US.com_{%= name.toLowerCase() %}.ini",
-  "component/admin/language/en-US/en-US.com_joomlajs.sys.ini": "component/admin/language/en-US/en-US.com_{%= name.toLowerCase() %}.sys.ini"
+  "component/admin/jgrunt.php": "component/admin/{%= name.toLowerCase() %}.php",
+  "component/jgrunt.xml": "component/{%= name.toLowerCase() %}.xml",
+  "component/site/jgrunt.php": "component/site/{%= name.toLowerCase() %}.php",
+  "component/site/language/en-GB/en-GB.com_jgrunt.ini": "component/site/language/en-GB/en-GB.com_{%= name.toLowerCase() %}.ini",
+  "component/site/language/en-US/en-US.com_jgrunt.ini": "component/site/language/en-US/en-US.com_{%= name.toLowerCase() %}.ini",
+  "component/admin/language/en-GB/en-GB.com_jgrunt.ini": "component/admin/language/en-GB/en-GB.com_{%= name.toLowerCase() %}.ini",
+  "component/admin/language/en-GB/en-GB.com_jgrunt.sys.ini": "component/admin/language/en-GB/en-GB.com_{%= name.toLowerCase() %}.sys.ini",
+  "component/admin/language/en-US/en-US.com_jgrunt.ini": "component/admin/language/en-US/en-US.com_{%= name.toLowerCase() %}.ini",
+  "component/admin/language/en-US/en-US.com_jgrunt.sys.ini": "component/admin/language/en-US/en-US.com_{%= name.toLowerCase() %}.sys.ini"
 }
