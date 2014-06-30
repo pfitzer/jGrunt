@@ -1,4 +1,5 @@
 {
+  "component/media/js/jgrunt.js": "component/media/{%= name.toLowerCase() %}.js",
   "component/admin/jgrunt.php": "component/admin/{%= name.toLowerCase() %}.php",
   "component/jgrunt.xml": "component/{%= name.toLowerCase() %}.xml",
   "component/site/jgrunt.php": "component/site/{%= name.toLowerCase() %}.php",

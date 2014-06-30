@@ -39,7 +39,7 @@
 		<filename>{%= name.toLowerCase() %}.php</filename>
 		<folder>views</folder>
 	</files>
-	<media older="media" destination="com_{%= name.toLowerCase() %}">
+	<media folder="media" destination="com_{%= name.toLowerCase() %}">
 		<folder>css</folder>
 		<folder>js</folder>
 		<folder>img</folder>

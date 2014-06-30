@@ -23,17 +23,17 @@ var questions = [
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-	availabletasks: {
-	    tasks: {
-	        options: {
-		    filter: 'exclude',
-		    tasks: ['availabletasks'],
-		    descriptions: {
-		        'default': 'list all avaiable tasks'
-	 	    }
-		}
-	    }
-	},        
+        availabletasks: {
+            tasks: {
+                options: {
+                filter: 'exclude',
+                tasks: ['availabletasks'],
+                descriptions: {
+                    'default': 'list all avaiable tasks'
+                }
+            }
+            }
+        },
         jshint: {
             all: [
                 'Gruntfile.js',
@@ -123,7 +123,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-exec');
     
-    grunt.registerTask('default', ['jshint', 'exec:test', 'compress']);
+    grunt.registerTask('default', ['avaiabletasks']);
     grunt.registerTask('build', ['jshint', 'exec:test', 'compress']);
     grunt.registerTask('test', ['jshint', 'exec:test']);
     
