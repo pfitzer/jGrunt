@@ -1,12 +1,13 @@
 # jGrunt
 
-> A Grunt-init template for creating Joomla! CMS components.
+> A Grunt-init template for creating Joomla! 3.0 CMS components.
 
+[node.js] http://nodejs.org/
 [grunt-init]: http://gruntjs.com/project-scaffolding
 [grunt]: http://gruntjs.com
 
 ## Installation
-This application requires [grunt][] and [grunt-init][] to be installed.
+This application requires [node.js][], [grunt][] and [grunt-init][] to be installed.
 
 Once grunt-init is installed, place this template in your `~/.grunt-init/`
 directory. It's recommended that you use git to clone this template into that
