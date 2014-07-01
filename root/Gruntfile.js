@@ -42,7 +42,8 @@ module.exports = function(grunt) {
         jshint: {
             all: [
                 'Gruntfile.js',
-                '*.js'
+                '*.js',
+                'component/media/js/*js'
             ],
             
             options: {
