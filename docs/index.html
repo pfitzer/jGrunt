@@ -1,0 +1,54 @@
+---
+layout: default
+title: Documentation
+permalink: /docs/
+---
+
+<h1>
+    <a name="jgrunt" class="anchor" href="#jgrunt"><span class="octicon octicon-link"></span></a>jGrunt</h1>
+
+<blockquote>
+    <p>A Grunt-init template for creating Joomla! 3.0 CMS components.</p>
+</blockquote>
+
+<h2>
+    <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>This application requires <a href="http://nodejs.org/">node.js</a>, <a href="http://gruntjs.com">grunt</a> and <a href="http://gruntjs.com/project-scaffolding">grunt-init</a> to be installed.</p>
+
+<p>Once grunt-init is installed, place this template in your <code>~/.grunt-init/</code>
+    directory. It's recommended that you use git to clone this template into that
+    directory, as follows:</p>
+
+<pre><code>git clone https://github.com/pfitzer/jGrunt.git ~/.grunt-init/jGrunt
+</code></pre>
+
+<p><em>(Windows users, see <a href="http://gruntjs.com/project-scaffolding">the documentation</a> for the correct
+    destination directory path)</em></p>
+
+<h2>
+    <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>At the command-line, cd into an empty directory, run this command and follow
+    the prompts.</p>
+
+<pre><code>grunt-init jGrunt
+</code></pre>
+
+<p>Then install all dependencies.</p>
+
+<pre><code>npm install
+</code></pre>
+
+<p>All the files for the component are located in the directory named <code>component</code>, this is where all your developemnt happens. </p>
+
+<p>To create a zipped file for your component run the command below.</p>
+
+<pre><code>grunt build
+</code></pre>
+
+<p>Your file will be saved in the directory named <code>build</code>.</p>
+
+<p><em>Note that this template will generate files in the current directory, so be
+    sure to change to a new directory first if you don't want to overwrite existing
+    files.</em></p>
