@@ -22,25 +22,31 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -59,6 +65,7 @@ body {
 a {
     color: #2879d0;
 }
+
 a:hover {
     color: #2268b2;
 }
@@ -138,16 +145,19 @@ a.button {
     padding-top: 22px;
     font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
 }
+
 a.button small {
     display: block;
     font-size: 11px;
 }
+
 header a.button {
     position: absolute;
     right: 0;
     top: 0;
     background: transparent url(../images/github-button.png) 0 0 no-repeat;
 }
+
 aside a.button {
     width: 138px;
     padding-left: 64px;
@@ -177,6 +187,7 @@ pre {
     overflow: auto;
     border: solid 1px #f2f2f2;
 }
+
 pre code {
     color: #2879d0;
     background-color: #fff;
@@ -187,7 +198,6 @@ pre code {
 ul, ol, dl {
     margin-bottom: 20px;
 }
-
 
 /* COMMON STYLES */
 
@@ -221,7 +231,6 @@ form {
 
 }
 
-
 /* GENERAL ELEMENT TYPE STYLES */
 
 #main-content h1 {
@@ -245,6 +254,7 @@ form {
     margin-bottom: 8px;
     color: #474747;
 }
+
 #main-content h2:before {
     content: "//";
     color: #9ddcff;
@@ -287,6 +297,7 @@ h4:before {
     font-size: 14px;
     color: #474747;
 }
+
 h5:before {
     content: "/////";
     color: #9ddcff;
@@ -299,6 +310,7 @@ h5:before {
     font-size: .8em;
     color: #474747;
 }
+
 h6:before {
     content: "//////";
     color: #9ddcff;
@@ -352,11 +364,12 @@ footer {
 footer a {
     color: #666;
 }
+
 footer a:hover {
     color: #444;
 }
 
-nav ul  {
+nav ul {
     color: #FFF;
     font-size: 25px;
 }
@@ -375,7 +388,7 @@ nav #main-nav a:hover, nav #main-nav a:active {
 }
 
 .clear {
-    float:none;
+    float: none;
     clear: both;
 }
 
@@ -388,33 +401,62 @@ nav #main-nav a:hover, nav #main-nav a:active {
     height: 0;
 }
 
-.clearfix {display: inline-block;}
-* html .clearfix {height: 1%;}
-.clearfix {display: block;}
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+.share-buttons-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.custom-social-buttons {
+    margin: 25px 0 100px;
+}
+
+.custom-social-button {
+    text-align: center;
+    float: left;
+    padding: 0 10px 0 0;
+}
 
 /* #Media Queries
 ================================================== */
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {}
+@media only screen and (max-width: 959px) {
+}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     .inner {
         width: 740px;
     }
+
     header h1, header h2 {
         width: 340px;
     }
+
     header h1 {
         font-size: 60px;
     }
+
     header h2 {
         font-size: 30px;
     }
+
     #main-content {
         width: 490px;
     }
+
     #main-content h1:before,
     #main-content h2:before,
     #main-content h3:before,
@@ -432,21 +474,27 @@ nav #main-nav a:hover, nav #main-nav a:active {
     .inner {
         width: 93%;
     }
+
     header {
         padding: 20px 0;
     }
+
     header .inner {
         position: relative;
     }
+
     header h1, header h2 {
         width: 100%;
     }
+
     header h1 {
         font-size: 48px;
     }
+
     header h2 {
         font-size: 24px;
     }
+
     header a.button {
         background-image: none;
         width: auto;
@@ -464,15 +512,18 @@ nav #main-nav a:hover, nav #main-nav a:active {
         -webkit-border-radius: 5px;
         border-radius: 5px;
     }
+
     header a.button small {
         font-size: 13px;
         display: inline;
     }
+
     #main-content,
     aside#sidebar {
         float: none;
         width: 100% ! important;
     }
+
     aside#sidebar {
         background-image: none;
         margin-top: 20px;
@@ -480,9 +531,11 @@ nav #main-nav a:hover, nav #main-nav a:active {
         padding: 20px 0;
         min-height: 0;
     }
+
     aside#sidebar a.button {
         display: none;
     }
+
     #main-content h1:before,
     #main-content h2:before,
     #main-content h3:before,
@@ -496,7 +549,9 @@ nav #main-nav a:hover, nav #main-nav a:active {
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+}
