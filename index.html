@@ -3,7 +3,7 @@ layout: default
 title: jGrunt - automatic component generating for Joomla CMS
 ---
 
-<h2>Welcome to jGrunt</h2>
+<h1>Welcome to jGrunt</h1>
 
 <p>Why using grunt-init with jGrunt to generate a base Joomla component?</p>
 <p>The answer is simple - spend less time on configuration and more time on programming. jGrunt enables
@@ -11,6 +11,93 @@ you to generate a base Joomla component in seconds. It create the hole structure
 with views, controllers and models. jGrunt asks you for some parameters like component name, license, repository url
 and so on, the rest is just magic.</p>
 
-<div><img src="images/jgrunt-init.png" /> </div>
+<h2>Generation</h2>
+<p>Here you can see which files are generated.</p>
+
+{% highlight bash %}
+mpfister ~/Scripte/jgrunt-test $ grunt-init jGrunt
+Running "init:jGrunt" (init) task
+This task will create one or more files in the current directory, based on the
+environment and the answers to a few questions. Note that answering "?" to any
+question will show question-specific help and answering "none" to most questions
+will leave its value blank.
+
+"jGrunt" template notes:
+For more information about how to use this template, please visit
+https://github.com/pfitzer/jGrunt
+
+Please answer the following:
+[?] Project name (Jgrunt-test) test
+[?] Description (Joomla! component.)
+[?] Version (0.0.1)
+[?] Project git repository (git://github.com/mpfister/jgrunt-test.git)
+[?] Project homepage (https://github.com/mpfister/jgrunt-test)
+[?] Project issues tracker (https://github.com/mpfister/jgrunt-test/issues)
+[?] Licenses (GNU GPLv3)
+[?] Author name (Pfister Michael)
+[?] Author email (michael@mp-development.de)
+[?] Author url (http://www.mp-development.de)
+[?] What versions of grunt does it require? (~0.4.5)
+[?] What versions of node does it run on? (>= 0.8.0)
+[?] Do you need to make any changes to the above before continuing? (y/N)
+
+Writing .gitignore...OK
+Writing .jshintrc...OK
+Writing Gruntfile.js...OK
+Writing component/admin/access.xml...OK
+Writing component/admin/config.xml...OK
+Writing component/admin/controller.php...OK
+Writing component/admin/index.html...OK
+Writing component/admin/test.php...OK
+Writing component/admin/language/en-GB/en-GB.com_joomlajs.ini...OK
+Writing component/admin/language/en-GB/en-GB.com_joomlajs.sys.ini...OK
+Writing component/admin/language/en-GB/index.html...OK
+Writing component/admin/language/en-US/en-US.com_joomlajs.ini...OK
+Writing component/admin/language/en-US/en-US.com_joomlajs.sys.ini...OK
+Writing component/admin/language/en-US/index.html...OK
+Writing component/admin/language/index.html...OK
+Writing component/install.php...OK
+Writing component/test.xml...OK
+Writing component/media/css/index.html...OK
+Writing component/media/css/style.css...OK
+Writing component/media/img/index.html...OK
+Writing component/media/js/index.html...OK
+Writing component/media/js/test.js...OK
+Writing component/site/controller.php...OK
+Writing component/site/controllers/index.html...OK
+Writing component/site/index.html...OK
+Writing component/site/test.php...OK
+Writing component/site/language/en-GB/en-GB.com_joomlajs.ini...OK
+Writing component/site/language/en-GB/index.html...OK
+Writing component/site/language/en-US/en-US.com_subtext.ini...OK
+Writing component/site/language/en-US/index.html...OK
+Writing component/site/language/index.html...OK
+Writing component/site/models/index.html...OK
+Writing component/site/router.php...OK
+Writing component/site/views/index.html...OK
+Writing tasks/index.js...OK
+Writing tmpl/com/controller.tmpl...OK
+Writing tmpl/com/default.tmpl...OK
+Writing tmpl/com/model.tmpl...OK
+Writing tmpl/com/table.tmpl...OK
+Writing tmpl/com/view.tmpl...OK
+Writing tmpl/com/xml.tmpl...OK
+Writing tmpl/mod/default.tmpl...OK
+Writing tmpl/mod/helper.tmpl...OK
+Writing tmpl/mod/mod.tmpl...OK
+Writing tmpl/mod/readme.tmpl...OK
+Writing tmpl/mod/xml.tmpl...OK
+Writing package.json...OK
+
+Initialized from template "jGrunt".
+You should now install project dependencies with npm install. After that, you
+may execute project tasks with grunt. For more information about installing
+and configuring Grunt, please see the Getting Started guide:
+
+http://gruntjs.com/getting-started
+
+Done, without errors.
+
+{% endhighlight %}
 
 <p>Read the <a href="{{ site.baseurl }}/docs">documentation</a> to learn how it works.</p>
